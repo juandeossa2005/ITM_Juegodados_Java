@@ -2,6 +2,7 @@ import java.awt.Color;
 import java.awt.Font;
 
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
@@ -57,5 +58,11 @@ public class FrmJuego extends JFrame{
         lblCenas.setOpaque(true);
         getContentPane().add(lblCenas);
 
+        JButton btnIniciar = new JButton("Iniciar");
+        btnIniciar.setBounds(10,15 + imagen.getIconHeight(),100,25);
+        getContentPane().add(btnIniciar);
+        JButton btnLanzar = new JButton("Lanzar");
+        btnLanzar.setBounds(10,45 + imagen.getIconHeight(),100,25);
+        getContentPane().add(btnLanzar);
     }
 } 
